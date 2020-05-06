@@ -1,0 +1,132 @@
+body, h1, h2 {
+ margin:0;
+ padding:0;
+ color: rgb(255, 255, 255);
+ text-align: center;
+}
+h3 {
+ margin:0;
+ padding:0;
+ color: rgb(187, 84, 96);
+ text-align: center;
+}
+body {
+ background:#1ac3d6;
+ font-family: Arial, sans-serif;
+}
+h1 {
+ padding:10px;
+ background:#8f1534;
+}
+
+/* LEER USUARIOS */
+#user-list {
+ margin:0;
+ padding:0;
+ width:180px;
+ float:left;
+ margin:10px;
+ border:1px solid #ab1138;
+}
+
+#user-list h2 {
+ padding:10px;
+ margin:0;
+ color:white;
+}
+
+#user-list li {
+ padding:5px 10px;
+ border-top:1px solid #ab1138;
+ cursor: pointer;
+ color:white;
+ font-style: italic;
+ list-style: none 
+}
+
+#user-list li:hover {
+ background: #ab1138;
+}
+
+#user-detail {
+ float:left;
+ width:200px;
+ margin:10px;
+ margin-left:0;
+ padding:10px;
+ border:1px solid #ab1138;
+ color:white;
+}
+
+/* AÑADIR MODULO DE USUARIOS */
+#add-user-module {
+    width:30px;
+    margin-bottom: 1px;
+    margin-left: 10px;
+    margin-top:10px;
+    color: #ab1138;
+}
+
+#add-user-module #open-add-user-form-btn {
+    background: #ab1138;
+    font-size: 1.5em;
+    color: white;
+    padding-bottom: 5px;
+}
+
+#add-user-module form {
+    position: absolute;
+    padding: 10px;
+    width: 150px;
+    background-color: #e1e1e1;
+    border: 1px solid #999;
+    display: none;
+    color: #ab1138;
+}
+
+#add-user-module form input {
+    width: 97%;
+    margin: 2px 0;
+}
+
+#add-user-module form button {
+    background: #db0038;
+    font-size: 1em;
+    padding: 0px 10px;
+    color: white;
+    margin-top: 10px;
+}
+
+
+#add-user-module:hover form {
+    display: block;
+}
+
+/*EDITAR*/
+#edit-user-module {
+    display: none;
+    position: absolute;
+    background-color: #e1e1e1;
+    border: 1px solid #999;
+    top:149px;
+    left: 160px;
+    padding: 10px;
+    width: 150px;
+    color: #ab1138;
+    width:170px;
+    margin-bottom: 1px;
+    margin-left: 10px;
+    margin-top:10px;
+
+}
+
+#user-list li:hover~#edit-user-module {
+    display: none;
+}
+#edit-user-module form button {
+    background: #db0038;
+    font-size: 1em;
+    padding: 0px 10px;
+    color: white;
+    margin-top: 10px;
+}

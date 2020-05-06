@@ -1,0 +1,55 @@
+  
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CRUD APP</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <h1>FIREBASE Y JAVASCRIPT
+        <br/><small><em>CRUD APP</em></small>
+        <br/><small><em>Karely Ferrer</em></small>
+    </h1>
+    <!-- AGREGAR MODULO DE USUARIO-->
+    <section id="add-user-module" >
+        <button id="open-add-user-form-btn">+</button>
+        <form>
+            <h3>Añadir Usuario</h3>
+            Nombre:<br>
+            <input type='text' data-key='Nombre' class='user-input'><br>
+            Edad:<br>
+            <input type='text' data-key='Edad' class='user-input'><br>
+            E-mail:<br>
+            <input type='text' data-key='E-mail' class='user-input'><br>
+            <button type='button' id="add-user-btn">Añadir</button>
+        </form>
+    </section>
+
+    <!-- EDITAR MODULO DE USUARIO -->
+    <section id="edit-user-module">
+        <form>
+            <h3>Editar Usuario</h3>
+            <input type="hidden" class="edit-userid">
+            Nombre:<br>
+            <input type='text' data-key='Nombre' class='edit-user-input'><br>
+            Edad:<br>
+            <input type='text' data-key='Edad' class='edit-user-input'><br>
+            E-mail:<br>
+            <input type='text' data-key='E-mail' class='edit-user-input'><br>
+            <button type='button' id="edit-user-btn">Guardar</button>
+        </form>
+    </section>
+
+
+    <!-- VER MODULO DE USUARIO-->
+    <ul id="user-list"></ul>
+    <div id="user-detail"></div>
+
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
+  </body>
+
+</html>
